@@ -1,3 +1,30 @@
+* {
+    overflow: hidden; 
+}
+
+body {
+    margin: 0;
+}
+.navbarContainer {
+    background-color: tan;
+}
+
 .navbar {
+    list-style-type: none;
+    float: right;
+    width: 50vw;
+
+}
+
+.navbar li {
+    display: inline-flex;
+    margin: 0 0 0 10%;
+    padding: 10px 0 0 0; 
     
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    padding: 10px 5px 5px 5px;
 }
