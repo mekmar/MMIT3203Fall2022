@@ -49,12 +49,9 @@ body {
     float: right;
 }
 
-.navbarContainer h1 {
-    display: inline-block;
-}
-
 .navbar li {
     display: inline-block;
+    font-weight: bold;
 }
 
 .navbar li a {
@@ -69,14 +66,16 @@ body {
 .logo {
     width: 100px;
     height: auto;
-    padding: 10px 5px 5px 5px;
-    margin: 0 200px 0 0;
+    /* padding: 10px 5px 5px 5px; */
+    margin: 0 0 0 0;
     display: inline-block;
+    /* position: relative;
+    float: left;*/
 }
 
 header {
-    /* width: 100%; */
-    /* text-align: center; */
+    width: 100%;
+    text-align: center;
     padding-top: 3%;
 }
 
@@ -147,6 +146,13 @@ header {
     width: 60%;
     text-align: left;
     display: inline-block;
+}
+
+.textSpan {
+    padding-right: 300px;
+    line-height: 1.5;
+    display: block;
+
 }
 
 footer {
