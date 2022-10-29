@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Food and Restaurant Blog">
+        <meta name="keywords" content="food blog, restaurant reviews, restaurant blog">
+        <meta name="author" content="Mekayla Martin">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>ATL Foodie</title>
+        
+        <link href = "styles.css" rel = "stylesheet">
+
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+
+        <script type="text/javascript">
+          (function(){
+            emailjs.init("uFBVRt7li8N7tYbdB");
+        })();
+        </script>
+
+        <script>
+        
+        function sendEmail() {
+            emailjs.send('service_jlpwx2f', 'template_6niyii4', {
+                from_name: document.getElementById('fname').value,
+                email: document.getElementById('femail').value,
+                phone_number: document.getElementById('fphonenumber').value,
+                message: document.getElementById('fmessage').value,
+            })
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Email sent successfully!')
+                window.location.reload()
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('Failed to send email.')
+            });
+        }
+        </script>
+
+    </head>
+
+    <body>
+        <div class = "navbarContainer"> 
+            <img class ="logo" src="Logo/ATL-FOODIE_Logo2.png" alt = "ATL Foodie Logo">
+            <ul class = "navbar">
+                <li> <a href = "index.html"> Home </a> </li>
+                <li> <a href = "restaurant.html "> Restaurant </a> </li>
+                <li> <a href = "about.html "> About </a> </li>
+                <li> <a href = "contact.html"> Contact </a> </li>
+            </ul>
+        </div>
+
+        <div class="pageContents">
+            
+            <header>
+                <h1> Get In Touch! </h1>
+            </header>
+
+            <p>If you have any questions, please reach out to me!</p>
+
+            <div class = "formContainer">
+                <form class = "inputWrapper" onsubmit="sendEmail(); return false">
+                    <label for = "fname"> Full Name: </label>
+                    <input type = "text" id = "fname" name = "from_name">
+
+                    <label for = "femail"> Email: </label>
+                    <input type = "text" id = "femail" name = "email">
+
+                    <label for = "fphonenumber"> Phone Number: </label>
+                    <input type = "text" id = "fphonenumber" name = "phone_number">
+
+                    <label for = "fmessage"> Message: </label>
+                    <input type = "text" id = "fmessage" name = "message">
+
+                    <input class = "submitButton" type="submit" value="Submit" >
+                </form>
+            </div>
+
+        </div>
+
+        <footer>
+            <img src = "Icons/instagram-white.png" alt = "instagram">
+            <img src = "Icons/facebook-white.png" alt = "instagram">
+            <img src = "Icons/youtube-white.png" alt = "instagram">
+            <img src = "Icons/pinterest-white.png" alt = "instagram">
+            <p> Copyright &copy; Mekayla Martin Fall 2022 IT 3203: Section W01 </p>
+            <a href="https://www.flaticon.com" title="instagram icons">Icons created by Freepik - Flaticon</a>
+        </footer>
+   
+    </body>
+</html>
