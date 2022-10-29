@@ -7,9 +7,9 @@
     height: 15px;
 }
 
-::-webkit-scrollbar-track {
-    /* background-image: linear-gradient(lavender); */
-}
+/* ::-webkit-scrollbar-track {
+    background-image: linear-gradient(lavender);
+} */
 
 ::-webkit-scrollbar-thumb { 
     background: lightgray;
@@ -128,11 +128,25 @@ header {
     margin-top: 15px !important;
 }
 
+.aboutContainer {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
 .aboutImage {
     height: 400px;
     width: auto;
+}
+
+.aboutImageContainer {
+    width: 30%;
     display: inline-block;
-   
+}
+
+.aboutTextContainer {
+    width: 60%;
+    text-align: left;
+    display: inline-block;
 }
 
 footer {
