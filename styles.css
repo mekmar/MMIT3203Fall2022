@@ -211,4 +211,6 @@ footer img {
 
 footer a {
     color: white;
+    margin-top: 10px;
+    display: block;
 }
