@@ -25,8 +25,9 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom right, lavender, pink);
+    /* background-image: linear-gradient(to bottom right, lavender, pink); */
     /* overflow-x: hidden; */
+    background-color: #ffebcf;
     margin: 0;
     min-height: 100vh;
     position: relative;
@@ -34,13 +35,15 @@ body {
 }
 
 .pageContents {
-    margin: 0 100px 0 100px;
+    margin: 0 250px 0 250px;
     text-align: center;
 }
 
 .navbarContainer {
-    background-image: linear-gradient(lavender);
+    background-color: ffebcf;
     font-size: 14px;
+    display: grid; grid-template-columns: 8.3% 51% 40%;
+    padding: 0 250px 0 250px;
 }
 
 .navbar {
@@ -51,7 +54,8 @@ body {
 
 .navbar li {
     display: inline-block;
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 1.1rem;
 }
 
 .navbar li a {
@@ -59,15 +63,19 @@ body {
     margin: 8px 10px 8px 0px;
     /* padding: 10px 0 0 0;  */
     text-decoration: none;
+    padding-top: 10px; 
     /* float: right; */
-    color: black;
+    color: #6b4400;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .logo {
-    width: 100px;
+
+    width: 300px;
     height: auto;
     /* padding: 10px 5px 5px 5px; */
-    margin: 0 0 0 0;
+    margin: 20px 0 0 0;
     display: inline-block;
     /* position: relative;
     float: left;*/
@@ -79,13 +87,19 @@ header {
     padding-top: 3%;
 }
 
+.restaurantContainer {
+    width: 100%;
+    display: grid; grid-template-columns:  33.3% 33.3% 33.3%;
+}
+
+
 .restaurantContainer div {
     display: inline-block;
     padding-top: 5%;
 }
 
 .restaurant {
-    width: 33%;
+    /* width: 33%; */
     display: inline-block;
     /* text-align: center; */
     /* height: auto;*/
@@ -99,7 +113,8 @@ header {
 }
 
 .bannerContainer img {
-    width: 60%;
+    /* width: 60%; */
+    width: 100%;
 }
 
 .formContainer {
@@ -110,9 +125,10 @@ header {
     
 }
 
-.inputWrapper input {
+.inputWrapper input, textarea {
     width: 500px;
     margin-top: 5px;
+    height: 25px;
 }
 
 .inputWrapper label {
@@ -122,36 +138,51 @@ header {
 
 }
 
+#fmessage {
+    height: 100px;
+}
+
 .submitButton {
+    background-color: #6b4400;
+    border: 0;
+    border-radius: 10px;
+    color: white;
     display: block; 
     margin-top: 15px !important;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30% !important;
 }
 
 .aboutContainer {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 100px 0 120px 0;
+    display: grid; grid-template-columns:  40% 10% 50%;
 }
 
 .aboutImage {
-    height: 400px;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .aboutImageContainer {
-    width: 30%;
+    /* width: 30%; */
     display: inline-block;
+    text-align: left;
 }
 
 .aboutTextContainer {
-    width: 60%;
+    /* width: 60%; */
+    /* max-width: 70%; */
     text-align: left;
     display: inline-block;
 }
 
 .textSpan {
-    padding-right: 300px;
+    /* padding-right: 300px; */
     line-height: 1.5;
     display: block;
+    font-size: 1.1rem;
 
 }
 
@@ -159,7 +190,9 @@ footer {
     height: var(--footerHeight);
     width: 100%;
     text-align: center;
-    background-color: #360167;
+    /* background-color: #360167; */
+    /* background-image: linear-gradient(to bottom right, lavender, pink); */
+    background-color: #dd8731;
     color: white;
     font-size: 12px;
     display: block;
