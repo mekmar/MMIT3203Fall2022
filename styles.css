@@ -43,7 +43,7 @@ body {
 .navbarContainer {
     background-color: ffebcf;
     font-size: 14px;
-    display: grid; grid-template-columns: 8.3% 51% 40%;
+    display: grid; grid-template-columns: 8.3% 50% 41%;
     padding: 0 250px 0 250px;
 }
 
@@ -210,23 +210,35 @@ header {
 
 }
 
-.kinotori-ramenContainer {
+.reviewContainer {
     /* width: 100%;
     margin: 100px 0 120px 0; */
     margin-bottom: 100px;
 }
 
-.kinotori-ramenImg {
+.reviewImg {
     height: auto;
     width: var(--imgWidth);
     margin: 30px 0 10px 0;
 }
 
-.kinotori-ramenContainer p {
+.reviewContainer p {
     max-width: var(--imgWidth);
     margin: auto;
     /* margin: 0 100px 0 100px; */
     text-align: left;
+}
+
+.reviewContainer a {
+    text-decoration: underline;
+    color: #6b4400;
+
+}
+
+.reviewContainer a:hover {
+    text-decoration: none;
+    color: #dd8731
+
 }
 
 .caption {
