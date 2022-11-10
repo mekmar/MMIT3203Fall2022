@@ -71,6 +71,19 @@ body {
     text-transform: uppercase;
 }
 
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #dd8731;
+    transition: width .3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
 .logo {
 
     width: 300px;
