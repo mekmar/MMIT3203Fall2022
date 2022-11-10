@@ -81,6 +81,10 @@ body {
     float: left;*/
 }
 
+.logoLink {
+    z-index: 20
+}
+
 header {
     width: 100%;
     text-align: center;
@@ -106,11 +110,16 @@ header {
     display: inline-block;
     /* text-align: center; */
     /* height: auto;*/
+
 }
 
 .restaurant img {
     height: 360px;
     width: auto;
+}
+
+#r6 {
+    margin-bottom: 100px;
 }
 
 .bannerContainer {
