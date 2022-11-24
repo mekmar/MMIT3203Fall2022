@@ -132,6 +132,16 @@ header {
     width: auto;
 }
 
+.img-overlay img:hover{
+    opacity: 0.3;
+}
+
+.img-overlay { 
+    height: 360px;
+    padding-top: 0 !important;
+    background-color: #dd8731;
+}
+
 #r6 {
     margin-bottom: 100px;
 }
@@ -250,7 +260,7 @@ header {
 
 .reviewContainer a:hover {
     text-decoration: none;
-    color: #dd8731
+    color: #dd8731;
 
 }
 
@@ -298,6 +308,14 @@ header {
     margin: auto;
     display: block;
     padding-bottom: 30px;
+}
+
+.recipe a {
+    color: #6b4400;
+}
+.recipe a:hover {
+        text-decoration: none;
+        color: #dd8731
 }
 
 footer {
