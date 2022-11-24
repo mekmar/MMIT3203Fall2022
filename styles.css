@@ -140,7 +140,7 @@ header {
     width: 100%; 
     display: inline-block;
     text-align: center;
-    margin: 30px 0 80px 0;
+    margin: 30px 0 40px 0;
 }
 
 .bannerContainer img {
@@ -260,6 +260,44 @@ header {
     padding-bottom: 30px;
     text-align: center !important;
 
+}
+
+.recipeTableContainer {
+    width: 100%;
+    text-align: left;
+    /* margin-bottom: 80px; */
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.recipeTableContainer tr, th { 
+    width: 10%;
+    height: 25px;
+}
+
+.recipeTableContainer h2 {
+    text-align: center;
+}
+
+.recipeTableContainer table {
+    padding: 30px;
+}
+
+.recipe {
+   font-size: small;
+   color: rgba(0, 0, 0, 0.5);
+   padding-bottom: 80px;
+   text-align: center !important;
+   /* margin-bottom: 50px; */
+}
+
+.recipeTableContainer img {
+    text-align: center !important;
+    height: 360px;
+    width: auto;
+    margin: auto;
+    display: block;
+    padding-bottom: 30px;
 }
 
 footer {
